@@ -3,22 +3,8 @@ const vendingMachine = require('./vendingMachine')
 module.exports = {
   
     getAmount: function(coinType) {
-        // COINS:
-        // [p]enny
-        // [n]ickel
-        // [d]ime
-        // [q]uarter
-        // switch(coinType){
-        //   case 'p': return 1;
-        //   case 'n': return 5;
-        //   case 'd': return 10;
-        //   case 'q': return 25;
-        //   default: throw new Error('Unrecognized coin ' + coinType);
-        // }
-
-        //SOLUTION: https://github.com/prochafilho/js-best-practices/blob/master/changeHandler.js
-
-        if(coinType =='p') {
+  
+        if(coinType == 'p') {
           return 1
         } else if (coinType == 'n') {
           return 5
@@ -31,3 +17,9 @@ module.exports = {
         }
       },
 };
+
+//Mike had me erase the comments, which made it work
+
+// strict equality - definitely this
+
+// double equals = type
